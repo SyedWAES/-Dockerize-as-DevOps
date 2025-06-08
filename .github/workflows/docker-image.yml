@@ -28,4 +28,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: your-dockerhub-username/cyber-stephen:${{ github.sha }},your-dockerhub-username/cyber-stephen:latest
+        tags: ${{secrets.DOCKERHUB_USERNAME}}/cyber-stephen:${{ github.sha }},${{secrets.DOCKERHUB_USERNAME}}/cyber-stephen:latest
